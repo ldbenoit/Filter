@@ -17,7 +17,7 @@ Show
     Rarity < Unique
     SetTextColor 255 240 207 # TX: Vendor
     SetBackgroundColor 19 23 35 # BG: NEAR BLACK
-    SetBorderColor 254 191 0 # BR: Yellow
+    SetBorderColor 214 215 218 # BR: Currency
     SetFontSize 40
     PlayAlertSound 3 300
 
@@ -38,6 +38,43 @@ Show
     SetFontSize 40
     PlayAlertSound 2 300
 
+# Section: League Items
+
+Show
+    Class "Currency"
+    BaseType "Remnant of Corruption" "Essence of Delirium" "Essence of Horror" "Essence of Insanity" "Essence of Hysteria"
+    SetTextColor 19 23 35 # TX: NEAR BLACK
+    SetBackgroundColor 219 209 173 # BG: Other
+    SetBorderColor 255 36 0 # BR: T1
+    SetFontSize 45
+    PlayAlertSound 3 300
+
+Show
+    Class "Currency"
+    BaseType "Essence"
+    SetTextColor 19 23 35 # TX: NEAR BLACK
+    SetBackgroundColor 219 209 173 # BG: Other
+    SetBorderColor 19 23 35 # BR: NEAR BLACK
+    SetFontSize 43
+    PlayAlertSound 3 150
+
+Show
+    Class "Currency"
+    BaseType "Prophecy"
+    SetTextColor 19 23 35 # TX: NEAR BLACK
+    SetBackgroundColor 219 209 173 # BG: Other
+    SetBorderColor 211 25 150 # BR: Purp
+    SetFontSize 40
+    PlayAlertSound 2 300
+
+Show
+    Class "Currency"
+    BaseType "Silver Coin" "Perandus Coin"
+    SetTextColor 255 240 207 # TX: Vendor
+    SetBackgroundColor 19 23 35 # BG: NEAR BLACK
+    SetBorderColor 19 23 35 # BR: NEAR BLACK
+    SetFontSize 40
+
 # Section: Currency
 
 Show
@@ -51,18 +88,36 @@ Show
 
 Show
     Class "Currency"
-    BaseType "Orb of Alchemy" "Orb of Fusing" "Cartographer's Chisel" "Orb of Scouring" "Blessed Orb" "Orb of Regret" "Vaal Orb" "Chaos Orb" "Regal Orb" "Gemcutter's Prism"
+    BaseType "Cartographer's Sextant" "Cartographer's Seal" "Unshaping Orb"
+    SetTextColor 19 23 35 # TX: NEAR BLACK
+    SetBackgroundColor 208 212 227 # BG: Currency
+    SetBorderColor 96 194 155 # BR: Map
+    SetFontSize 40
+    PlayAlertSound 3 200
+
+Show
+    Class "Currency"
+    BaseType "Orb of Regret" "Vaal Orb" "Chaos Orb" "Regal Orb" "Gemcutter's Prism"
+    SetTextColor 19 23 35 # TX: NEAR BLACK
+    SetBackgroundColor 208 212 227 # BG: Currency
+    SetBorderColor 19 23 35 # BR: NEAR BLACK
+    SetFontSize 45
+    PlayAlertSound 3 250
+
+Show
+    Class "Currency"
+    BaseType "Orb of Alchemy" "Orb of Fusing" "Cartographer's Chisel" "Orb of Scouring" "Blessed Orb"
     SetTextColor 214 215 218 # TX: Curency
-    SetBackgroundColor 34 34 51
+    SetBackgroundColor 19 23 35 # BG: NEAR BLACK
     SetBorderColor 214 215 218 # BR: Currency
     SetFontSize 45
-    PlayAlertSound 3 100
+    PlayAlertSound 4 175
 
 Hide
     Class "Currency"
-    BaseType "Orb of Chance" "Orb of Alteration" "Chromatic Orb" "Jeweller's Orb"
+    BaseType "Orb of Chance" "Orb of Alteration" "Chromatic Orb" "Jeweller's Orb" "Glassblower's Bauble"
     SetTextColor 214 215 218 # TX: Curency
-    SetBackgroundColor 19 23 35 128 # BG- Near Black 50
+    SetBackgroundColor 19 23 35 # BG: NEAR BLACK
     SetBorderColor 214 215 218 # BR: Currency
     SetFontSize 40
 
@@ -70,25 +125,25 @@ Hide
     Class "Currency"
     BaseType "Orb of Transmutation" "Blacksmith's Whetstone" "Alchemy Shard"
     SetTextColor 214 215 218 # TX: Curency
-    SetBackgroundColor 19 23 35 128 # BG- Near Black 50
+    SetBackgroundColor 19 23 35 # BG: NEAR BLACK
     SetBorderColor 19 23 35 128 # BR: Near Black 50
-    SetFontSize 35
+    SetFontSize 40
 
 Hide
     Class "Currency"
     BaseType "Armourer's Scrap" "Orb of Augmentation" "Alteration Shard"
     SetTextColor 214 215 218 # TX: Curency
-    SetBackgroundColor 19 23 35 128 # BG- Near Black 50
-    SetBorderColor 19 23 35 128 # BR: Near Black 50
-    SetFontSize 30
+    SetBackgroundColor 19 23 35 # BG: NEAR BLACK
+    SetBorderColor 19 23 35 # BR: NEAR BLACK
+    SetFontSize 36
 
 Hide
     Class "Currency"
     BaseType "Portal Scroll" "Scroll of Wisdom"
     SetTextColor 214 215 218 # TX: Curency
-    SetBackgroundColor 19 23 35 128 # BG- Near Black 50
+    SetBackgroundColor 19 23 35 # BG: NEAR BLACK
     SetBorderColor 19 23 35 128 # BR: Near Black 50
-    SetFontSize 25
+    SetFontSize 34
 
 # Section: Base Items
 
@@ -133,13 +188,13 @@ Show
     SetBorderColor 254 191 0 # BR: Yellow
     SetFontSize 40
 
-Show
+Hide
     BaseType "Ambusher" "Imperial Skean" "Demon Dagger" "Platinum Kris" "Harbinger Bow" "Imbued Wand" "Vaal Axe"
     Rarity = Magic
     ItemLevel >= 83
     SetTextColor 254 191 0 # TX: YELLOW
     SetBackgroundColor 19 23 35 # BG: NEAR BLACK
-    SetBorderColor 214 215 218 # BR: Currency
+    SetBorderColor 30 150 180 # BORDERCOLOR: T1 Gems
     SetFontSize 36
 
 Show
@@ -147,6 +202,7 @@ Show
     ItemLevel >= 83
     SetTextColor 254 191 0 # TX: YELLOW
     SetBackgroundColor 19 23 35 # BG: NEAR BLACK
+    SetBorderColor 214 215 218 # BR: Currency
     SetFontSize 36
 
 Show
@@ -163,7 +219,7 @@ Hide
     ItemLevel >= 84
     SetTextColor 254 191 0 # TX: YELLOW
     SetBackgroundColor 19 23 35 # BG: NEAR BLACK
-    SetBorderColor 214 215 218 # BR: Currency
+    SetBorderColor 30 150 180 # BORDERCOLOR: T1 Gems
     SetFontSize 40
 
 Show
@@ -171,29 +227,30 @@ Show
     ItemLevel >= 84
     SetTextColor 254 191 0 # TX: YELLOW
     SetBackgroundColor 19 23 35 # BG: NEAR BLACK
+    SetBorderColor 214 215 218 # BR: Currency
     SetFontSize 40
 
 Show
     Class "Jewel"
     Rarity = Unique
-    SetTextColor 158 129 166 # Tx: Jewel
+    SetTextColor 35 89 143 # Tx: Jewel
     SetBackgroundColor 19 23 35 # BG: NEAR BLACK
     SetBorderColor 254 90 39 # BR: ORANGE
     SetFontSize 40
-    PlayAlertSound 9 78
+    PlayAlertSound 9 200
 
 Show
     Class "Jewel"
     Rarity = Rare
-    SetTextColor 158 129 166 # Tx: Jewel
+    SetTextColor 35 89 143 # Tx: Jewel
     SetBackgroundColor 19 23 35 # BG: NEAR BLACK
-    SetBorderColor 158 129 166 # BR: Jewel
+    SetBorderColor 35 89 143 # BR: Jewel
     SetFontSize 40
-    PlayAlertSound 9 78
+    PlayAlertSound 9 100
 
-Show
+Hide
     Class "Jewel"
-    SetTextColor 158 129 166 # Tx: Jewel
+    SetTextColor 35 89 143 # Tx: Jewel
     SetBackgroundColor 19 23 35 # BG: NEAR BLACK
     SetBorderColor 19 23 35 # BR: NEAR BLACK
     SetFontSize 35
@@ -218,6 +275,7 @@ Show
     SetBackgroundColor 21 208 249 # BG: Gem
     SetBorderColor 30 150 180 # BORDERCOLOR: T1 Gems
     SetFontSize 45
+    PlayAlertSound 4 175
 
 Show
     Class "Gems"
@@ -226,6 +284,7 @@ Show
     SetBackgroundColor 19 23 35 # BG: NEAR BLACK
     SetBorderColor 21 208 249 # BR: Gem
     SetFontSize 42
+    PlayAlertSound 4 100
 
 Show
     Quality >= 14
@@ -243,6 +302,8 @@ Hide
 Hide
     BaseType "Flask"
     Rarity <= Magic
+    SetBackgroundColor 19 23 35 # BG: NEAR BLACK
+    SetBorderColor 19 23 35 # BR: NEAR BLACK
     SetFontSize 20
 
 # Section: Maps and Fragments
@@ -260,8 +321,8 @@ Show
 Show
     Class "Maps"
     Rarity = Unique
-    SetTextColor 96 194 155 # TX: Map
-    SetBackgroundColor 19 23 35 # BG: NEAR BLACK
+    SetTextColor 254 90 39 # TX: ORANGE
+    SetBackgroundColor 96 194 155 # BG: Map
     SetBorderColor 254 90 39 # BR: ORANGE
     SetFontSize 42
     PlayAlertSound 4 300
@@ -281,7 +342,7 @@ Show
     SetBackgroundColor 253 250 251 # BG: T1
     SetBorderColor 96 194 155 # BR: Map
     SetFontSize 45
-    PlayAlertSound 5 300
+    PlayAlertSound 1 300
 
 Show
     Class "Maps"
@@ -290,21 +351,32 @@ Show
     SetBackgroundColor 96 194 155 # BG: Map
     SetBorderColor 19 23 35 # BR: NEAR BLACK
     SetFontSize 45
-    PlayAlertSound 1 300
+    PlayAlertSound 1 225
+
+Show
+    DropLevel >= 77
+    Class "Maps"
+    BaseType "Shaped"
+    SetTextColor 96 194 155 # TX: Map
+    SetBackgroundColor 19 23 35 # BG: NEAR BLACK
+    SetBorderColor 19 23 35 # BR: NEAR BLACK
+    SetFontSize 42
 
 # tier 11~16 REDS
 Show
+    DropLevel >= 78
     Class "Maps"
-    BaseType "Shaped Beach Map" "Shaped Canyon Map" "Shaped Armoury Map" "Shaped Quarry Map" "Shaped Racecourse Map" "Shaped Ramparts Map" "Shaped Spider Forest Map" "Shaped Strand Map" "Shaped Thicket Map" "Shaped Vaal City Map" "Shaped Wharf Map" "Bazaar Map" "Chateau Map" "Excavation Map" "Precinct Map" "Torture Chamber Map" "Underground Sea Map" "Wasteland Map" "Shaped Arachnid Tomb Map" "Shaped Castle Ruins Map" "Shaped Catacombs Map" "Shaped Cells Map" "Shaped Ashen Wood Map" "Shaped Mud Geyser Map" "Crematorium Map" "Estuary Map" "Necropolis Map" "Plateau Map" "Ivory Temple Map" "Residence Map" "Shipyard Map" "Vault Map" "Shaped Arachnid Nest Map" "Shaped Arena Map" "Shaped Bog Map" "Shaped Cemetery Map" "Shaped Barrows Map" "Shaped Atoll Map" "Shaped Pier Map" "Shaped Shore Map" "Shaped Tropical Island Map" "Lair Map" "Beacon Map" "Gorge Map" "High Gardens Map" "Plaza Map" "Scriptorium Map" "Sulphur Wastes Map" "Waterways Map" "Shaped Coves Map" "Shaped Crypt Map" "Shaped Museum Map" "Shaped Orchard Map" "Shaped Overgrown Shrine Map" "Shaped Promenade Map" "Shaped Reef Map" "Shaped Temple Map" "Maze Map" "Mineral Pools Map" "Palace Map" "Shrine Map" "Springs Map" "Volcano Map" "Shaped Colonnade Map" "Shaped Arsenal Map" "Shaped Courtyard Map" "Shaped Malformation Map" "Shaped Quay Map" "Shaped Terrace Map" "Shaped Underground River Map" "Abyss Map" "Colosseum Map" "Core Map" "Dark Forest Map" "Overgrown Ruin Map" "Pit of the Chimera Map" "Lair of the Hydra Map" "Maze of the Minotaur Map" "Forge of the Phoenix Map" "Vaal Temple Map" "Shaped Dunes Map" "Shaped Mesa Map"
     SetTextColor 96 194 155 # TX: Map
     SetBackgroundColor 19 23 35 # BG: NEAR BLACK
     SetBorderColor 96 194 155 # BR: Map
     SetFontSize 45
-    PlayAlertSound 5 140
+    PlayAlertSound 4 132
 
 Hide
     Class "Maps"
     SetTextColor 96 194 155 # TX: Map
+    SetBackgroundColor 19 23 35 # BG: NEAR BLACK
+    SetBorderColor 19 23 35 # BR: NEAR BLACK
     SetFontSize 42
 
 Show
@@ -327,11 +399,11 @@ Show
 Show
     Class "Map Fragments"
     BaseType "Fragment of the Phoenix" "Fragment of the Minotaur" "Fragment of the Chimera" "Fragment of the Hydra" "Breachstone"
-    SetTextColor 19 23 35 # TX: NEAR BLACK
-    SetBackgroundColor 146 159 163 # BG: Frag
-    SetBorderColor 19 23 35 # BR: NEAR BLACK
+    SetTextColor 146 159 163 # TX: Frag
+    SetBackgroundColor 253 250 251 # BG: T1
+    SetBorderColor 146 159 163 # BR: Frag
     SetFontSize 45
-    PlayAlertSound 2 300
+    PlayAlertSound 6 300
 
 Show
     Class "Map Fragments"
@@ -388,33 +460,7 @@ Hide
     SetFontSize 40
     PlayAlertSound 2 50
 
-Show
-    Class "Currency"
-    BaseType "Essence" "Cartographer's Sextant" "Cartographer's Seal" "Unshaping Orb" "Remnant of Corruption"
-    SetTextColor 19 23 35 # TX: NEAR BLACK
-    SetBackgroundColor 214 215 218 # BG: Currency
-    SetBorderColor 19 23 35 # BR: NEAR BLACK
-    SetFontSize 43
-    PlayAlertSound 3 150
-
 # Section: Divination
-
-Show
-    Class "Currency"
-    BaseType "Prophecy"
-    SetTextColor 19 23 35 # TX: NEAR BLACK
-    SetBackgroundColor 214 215 218 # BG: Currency
-    SetBorderColor 211 25 150 # BR: Purp
-    SetFontSize 40
-    PlayAlertSound 2 300
-
-Hide
-    Class "Divination"
-    BaseType "Carrion Crow" "Other Cheek" "Hermit" "King's Blade" "Thunderous Skies" "Metalsmith's Gift" "Death" "Her Mask" "The Coming Storm" "Rain of Chaos" "The Scholar" "Rain Tempter" "Destined to Crumble" "The Inoculated" "The Lover" "Lantador's Lost Love" "The Lord in Black" "Prosperity" "The Rabid Rhoa" "Shard of Fate" "The Sigil" "The Spoiled Prince" "The Surgeon" "The Twins" "Dying Anguish" "The Summoner" "Anarchy's Price" "Birth of the Three" "The Conduit" "The Dragon" "Doedre's Madness" "The Drunken Aristocrat" "The Feast" "The Incantation" "The Lich" "The Lion" "The Pack Leader" "The Scarred Meadow" "The Sun" "The Throne" "The Wolf's Shadow"
-    SetTextColor 73 174 192 # TX: Div
-    SetBackgroundColor 19 23 35 # BG: NEAR BLACK
-    SetBorderColor 19 23 35 # BR: NEAR BLACK
-    SetFontSize 38
 
 Show
     Class "Divination"
@@ -424,6 +470,14 @@ Show
     SetBorderColor 73 174 192 # BR: DIV
     SetFontSize 45
     PlayAlertSound 5 300
+
+Hide
+    Class "Divination"
+    BaseType "Carrion Crow" "Other Cheek" "Hermit" "King's Blade" "Thunderous Skies" "Metalsmith's Gift" "Death" "The Coming Storm" "Rain of Chaos" "The Scholar" "Rain Tempter" "Destined to Crumble" "The Inoculated" "The Lover" "Lantador's Lost Love" "The Lord in Black" "Prosperity" "The Rabid Rhoa" "Shard of Fate" "The Sigil" "The Spoiled Prince" "The Surgeon" "The Twins" "Dying Anguish" "The Summoner" "Anarchy's Price" "Birth of the Three" "The Conduit" "The Dragon" "Doedre's Madness" "The Drunken Aristocrat" "The Feast" "The Incantation" "The Lich" "The Lion" "The Pack Leader" "The Scarred Meadow" "The Sun" "The Throne" "The Wolf's Shadow"
+    SetTextColor 73 174 192 # TX: Div
+    SetBackgroundColor 19 23 35 # BG: NEAR BLACK
+    SetBorderColor 19 23 35 # BR: NEAR BLACK
+    SetFontSize 38
 
 Show
     Class "Divination"
@@ -437,6 +491,7 @@ Show
     Class "Currency"
     SetTextColor 214 215 218 # TX: Curency
     SetBorderColor 19 23 35 # BR: NEAR BLACK
+    SetFontSize 35
 
 # Section: Leaguestone
 
@@ -603,9 +658,10 @@ Show
 
 Hide
     Class "Two Hand" "Bows" "One Hand" "Wand" "Sceptre" "Staves" "Claws" "Body Armour" "Gloves" "Boots" "Helmets" "Quivers" "Flask" "Daggers" "Shields" "Belts" "Rings" "Amulets"
-    SetBackgroundColor 0 0 0 165
-    SetBorderColor 0 0 0 150
-    SetFontSize 26
+    SetTextColor 255 240 207 # TX: Vendor
+    SetBackgroundColor 19 23 35 128 # BG- Near Black 50
+    SetBorderColor 0 0 0 0
+    SetFontSize 11
 
 Show
     SetTextColor 211 25 150 # TX: Purp
